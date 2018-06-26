@@ -1,0 +1,101 @@
+/**index.wxss**/
+
+/* 通用 */
+	.flex_box{
+		display: flex;
+	}
+/* end <-> 通用 */
+
+/* banner */
+	swiper{
+		height:320rpx;
+	}
+	.slide-image{
+		display: block;
+		width:690rpx; 
+		height:320rpx;
+		margin:0 auto;
+		border-radius: 16rpx;
+	}
+/* end <-> banner */
+
+/*=分类展示 */
+	.classify_list{
+		padding:36rpx 30rpx 0rpx 30rpx;
+		/* flex-wrap: wrap; */
+		justify-content: space-between;
+	}
+	.classify_listbox{
+		width: 110rpx;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.classify_name{
+		display: block;
+		font-size: 26rpx;
+		text-align: center;
+		color: #585858;
+	}
+	.classify_imgUrl{
+		width: 110rpx;
+		height: 120rpx;
+	}
+/* end <-> 分类展示 */
+
+/* 今日推荐 */
+	.dailyRecommendation{
+		margin-top:36rpx;
+		width: 100%;
+	}
+	.dailyRecommendation .top{
+		padding:0rpx 30rpx 0rpx 30rpx;
+		justify-content: space-between;
+	}
+	.dailyRecommendation .top>text{
+		font-family: PingFangSC-Semibold;
+		font-size: 40rpx;
+		font-weight: bold;
+		color: #333333;
+	}
+	.dailyRecommendation .more image{
+		width: 20rpx;
+		height: 20rpx;
+		margin-left: 9rpx;
+	}
+	.dailyRecommendation .more text{
+		font-family: PingFangSC-Medium;
+		font-size: 24rpx;
+		color: #999999;
+	}
+	.dailyRecommendation .content{
+		width: 100%;
+	}
+	.story_list{
+		padding:36rpx 30rpx 0rpx 30rpx;
+		justify-content: space-between;
+	}
+	.story_listbox{
+		width: 210rpx;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.story_name{
+		display: block;
+		font-size: 28rpx;
+		text-align: left;
+		font-family: PingFangSC-Semibold;
+		color: #333333;
+		font-weight: bold;
+	}
+	.story_imgUrl{
+		width: 210rpx;
+		height: 210rpx;
+		border-radius: 10rpx;
+	}
+
+/* end <-> 今日推荐 */
+
+
+
+ 
+

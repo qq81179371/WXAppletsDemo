@@ -1,0 +1,34 @@
+<!--pages/mine/mine.wxml-->
+<view id="mine">
+	<view class="top">
+		<image src="../../images/imagesMine/user_bg.png"></image>
+		<view class="name">{{userInfo.name}}</view>
+		<image class="userImage" src="{{userInfo.imgUrl}}"></image>
+	</view>
+
+	<view class="birthday">
+		<image src="../../images/imagesClassfy/class_ico_age.png"></image>
+		<text>宝宝生日</text>
+	</view>
+
+	<view class="birthday_data"> 2017-03-04</view>
+
+	<view class="top_list flex_box" wx:for="{{topList}}" wx:key="index">
+		<image class="top_list_logo" src="{{item.imgUrl}}"></image>
+		<view class="top_list_text flex_box">
+			<text>{{item.text}}</text>
+			<image class="arrows" src="../../images/imagesHome/home_btn_more.png"></image>
+		</view>
+	</view>
+
+	<view class="gray"></view>
+
+	<view class="top_list flex_box" wx:for="{{topList1}}">
+		<image class="top_list_logo" src="{{item.imgUrl}}"></image>
+		<view class="top_list_text flex_box">
+			<text>{{item.text}}</text>
+			<image class="arrows" src="../../images/imagesHome/home_btn_more.png"></image>
+		</view>
+		
+	</view>
+</view>	

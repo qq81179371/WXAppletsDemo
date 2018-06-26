@@ -1,0 +1,27 @@
+<view id="steward">
+	<view class="nav">
+		<block wx:for="{{stewardNav}}" wx:key="index">
+			<text class="{{stewardNavStatus.id === item.id?'active':''}}" bindtap="tabChange" data-index="{{index}}">{{item.label}}</text>
+		</block>
+		<view></view>
+	</view>
+
+	<view class="story_list flex_box" wx:for="{{stewardNavStatus.id === 0?storyList:storyList1}}">
+		<view class="left" >
+			<image src="{{item.imgUrl}}"></image>
+		</view>
+		<view class="center">
+			<view class="name">{{item.name}}</view>
+			<view class="describe">{{item.describe}}</view>
+			<view>
+				<image class="imageAge" src="../../images/imagesSteward/booklist_ico_age.png"></image>
+				<text>{{item.age}}</text>
+				<image class="imageXin" src="../../images/imagesSteward/booklist_ico_like.png"></image>
+				<text>{{item.xin}}</text>
+			</view>
+		</view>
+		<view class="right">
+			<image src="../../images/imagesSteward/booklist_btn_play.png"></image>
+		</view>
+	</view>
+</view>

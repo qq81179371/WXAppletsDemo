@@ -1,0 +1,110 @@
+// pages/steward/steward.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    stewardNav:[
+      {
+        id:0,
+        label:'最近收听'
+      },
+      {
+        id:1,
+        label:'最近收藏'
+      }
+    ],
+    stewardNavStatus:{id:0},
+    storyList:[
+      {
+        name:'十万个为什么',
+        imgUrl:'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },
+       {
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      }
+    ],
+    storyList1:[
+      {
+        name:'十万个为什么1',
+        imgUrl:'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么1',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么2',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      },{
+        name:'十万个为什么3',
+        imgUrl:'../../images/imagesClassfy/class_btn_a.png',
+        describe:'以科普知识为主要素材，以卡通人物为主角形象，借助小故事讲述日常…',
+        age:'3-7岁',
+        xin:'1354'
+      }
+    ]
+  },
+
+
+  tabChange:function(event){
+    console.log(event)
+    let id = event.target.dataset.index
+
+    this.setData({
+      'stewardNavStatus.id':id
+    })
+
+  }
+})

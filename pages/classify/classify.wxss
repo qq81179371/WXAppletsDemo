@@ -1,0 +1,89 @@
+/* pages/classify/classify.wxss */
+
+#classify{
+	border-top: 1rpx solid #DEDEDE;
+}
+/* 通用 */
+	.flex_box{
+		display: flex;
+	}
+/* end <-> 通用 */
+
+/*=分类展示 */
+	.classify{
+		margin-bottom: 44rpx;
+	}
+	.classify_list{
+		padding:36rpx 30rpx 0rpx 30rpx;
+		/* flex-wrap: wrap; */
+		justify-content: space-between;
+	}
+	.classify_listbox{
+		width: 110rpx;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.classify_name{
+		display: block;
+		font-size: 26rpx;
+		text-align: center;
+		color: #585858;
+	}
+	.classify_imgUrl{
+		width: 110rpx;
+		height: 120rpx;
+	}
+/* end <-> 分类展示 */
+
+/*age 场景*/
+	.age_classify{
+		justify-content: space-between;
+		border-top: 1rpx solid #DEDEDE;
+	}
+	.age_classify .left{
+		width: 70rpx;
+		padding: 62rpx 71rpx 64rpx 69rpx;
+		flex-direction: column;
+		justify-content: space-between; 
+	}	
+	.age_classify .left image{
+		width: 70rpx;
+		height: 70rpx;
+		margin-bottom: 10rpx;
+	}
+	.age_classify .left>text{.
+		display: block;
+		font-family: PingFangSC-Medium;
+		font-size: 24rpx;
+		color: #605A5A;
+		text-align: center;
+	}
+
+	.age_classify .right {
+		flex: 1;
+
+	}
+	.age_row{
+		margin-top: 50rpx;
+		padding-right: 40rpx;
+		justify-content: space-between;
+	}
+	.age_row_item{
+		width: 140rpx;
+		height: 50rpx;
+		background: #F0F0F0;
+		text-align: center;
+		border-radius: 25rpx;
+		font-family: PingFangSC-Medium;
+		font-size: 24rpx;
+		color: #605A5A;
+		line-height: 50rpx;
+	}
+
+	.age_row_item_active{
+		background: #FFA733;
+		color: #fff;
+	}
+
+/*end <-> age*/
+

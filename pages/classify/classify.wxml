@@ -1,0 +1,46 @@
+<!--pages/classify/classify.wxml-->
+<view id="classify">
+  <!-- 分类展示 -->
+  <view class="classify">
+	  <view wx:for="{{classify}}" wx:key="index">
+	    <view class="flex_box classify_list" >
+	      <view class="classify_listbox" wx:for="{{item}}" wx:key="{{index}}">
+	        <image class="classify_imgUrl" src="{{item.imgUrl}}"></image>
+	        <text class="classify_name">{{item.name}}</text>
+	      </view>
+	    </view>
+	  </view>
+  </view>
+
+  <!-- age -->
+  <view class="age_classify flex_box">
+  	<view class="left flex_box">
+  		<image src="../../images/imagesClassfy/class_ico_scene.png"></image>
+  		<text>年龄</text>
+  	</view>
+  	<view class="right">
+  		<view class="age_row flex_box" wx:for="{{age}}" wx:key="index">
+  			<view class="age_row_item {{item.status?'age_row_item_active':''}}" bindtap="agechoosed" wx:for="{{item}}" wx:key="index" data-item="{{item}}" >
+  				{{item.ageName}}
+  			</view>
+  		</view>
+  	</view>
+  </view>
+
+  <!-- 场景 -->
+  <view class="age_classify flex_box">
+  	<view class="left flex_box">
+  		<image src="../../images/imagesClassfy/class_ico_age.png"></image>
+  		<text>场景</text>
+  	</view>
+  	<view class="right">
+  		<view class="age_row flex_box" wx:for="{{address}}" wx:key="index">
+  			<view class="age_row_item {{item.status?'age_row_item_active':''}}" bindtap="adresschoosed" wx:for="{{item}}" wx:key="index" data-item="{{item}}">
+  				{{item.addressName}}
+  			</view>
+  		</view>
+  	</view>
+  </view>
+
+
+</view>

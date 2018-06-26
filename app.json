@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/steward/steward",
+    "pages/classify/classify",
+    "pages/index/index",
+    "pages/transmit/transmit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "故事王国",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#979797",
+    "selectedColor":"#FFA733",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/imagesNav/tab_home_n.png",
+      "selectedIconPath":"images/imagesNav/tab_home_h.png"
+    }, {
+      "pagePath": "pages/steward/steward",
+      "text": "管家",
+      "iconPath":"images/imagesNav/tab_book_n.png",
+      "selectedIconPath":"images/imagesNav/tab_book_h.png"
+    },{
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath":"images/imagesNav/tab_class_n.png",
+      "selectedIconPath":"images/imagesNav/tab_class_h.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath":"images/imagesNav/tab_me_n.png",
+      "selectedIconPath":"images/imagesNav/tab_me_h.png"
+    }]
+  },
+  
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
